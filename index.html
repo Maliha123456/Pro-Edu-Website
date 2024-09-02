@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4f547193bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<header>
+  <!-- navbar starts -->
+  <nav class="container mx-auto">
+    <div class="navbar bg-white text-black">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-slate-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+          <li>
+            <a>Courses</a>
+          </li>
+          <li>
+            <a>Details</a>
+          </li>
+          <li>
+            <a>Success</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Register</a>
+          </li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-2xl font-bold">Pro Edu</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li>
+            <a>Courses</a>
+          </li>
+          <li>
+            <a>Details</a>
+          </li>
+          <li>
+            <a>Success</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li>
+            <a>Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-outline btn-info w-24">Register</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- slider start -->
+<section class="container lg:mx-auto">
+  <div class="carousel w-full">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img
+        src="images/cover/cover-1.png"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide4" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide2" class="carousel-item relative w-full">
+      <img
+        src="images/cover/cover-2.jpg"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide3" class="carousel-item relative w-full">
+      <img
+        src="images/cover/cover-3.jpg"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- slider end -->
+  <!-- column part -->
+  <main class="p-2">
+    
+      <div class="text-center text-black mt-7 p-5">
+        <h3 class="text-3xl font-bold">Discover Our Popular Courses</h3>
+        <p class="text-2xl">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+    <div class="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-2">
+      <div class="card lg:card-side md:card-side w-full bg-white text-black shadow-xl">
+        <figure>
+          <img class="w-full"
+            src="images/course/course-1.png"
+            alt="" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Fundamental Of UI/UX Design</h2>
+          <p>CSome quick example text to build on the card title and make up the bulk of the card.</p>
+          <h5 class="text-indigo-600 font-semibold">Price: 20$</h5>
+        </div>
+    </div>
+    <div class="card lg:card-side md:card-side w-full bg-white text-black shadow-xl">
+      <figure>
+        <img class="w-full"
+          src="images/course/course-2.png"
+          alt="" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Fullstack Web Development</h2>
+        <p>CSome quick example text to build on the card title and make up the bulk of the card.</p>
+        <h5 class="text-indigo-600 font-semibold">Price: 20$</h5>
+      </div>
+  </div>
+  <div class="card lg:card-side md:card-side w-full bg-white text-black shadow-xl">
+    <figure>
+      <img class="w-full"
+        src="images/course/course-3.png"
+        alt="" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Photography Basic Rules</h2>
+      <p>CSome quick example text to build on the card title and make up the bulk of the card.</p>
+      <h5 class="text-indigo-600 font-semibold">Price: 20$</h5>
+    </div>
+</div>
+<div class="card lg:card-side md:card-side w-full bg-white text-black shadow-xl">
+  <figure>
+    <img class="w-full"
+      src="images/course/course-4.png"
+      alt="" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Javascript Basic to advanced</h2>
+    <p>CSome quick example text to build on the card title and make up the bulk of the card.</p>
+    <h5 class="text-indigo-600 font-semibold">Price: 20$</h5>
+  </div>
+</div>
+<div class="card lg:card-side md:card-side w-full bg-white text-black shadow-xl">
+  <figure>
+    <img class="w-full"
+      src="images/course/course-5.png"
+      alt="" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Digital Marketing</h2>
+    <p>CSome quick example text to build on the card title and make up the bulk of the card.</p>
+    <h5 class="text-indigo-600 font-semibold">Price: 20$</h5>
+  </div>
+</div>
+<div class="card lg:card-side md:card-side w-full bg-white text-black shadow-xl">
+  <figure>
+    <img class="w-full"
+      src="images/course/course-6.png"
+      alt="" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Motion Graphics</h2>
+    <p>CSome quick example text to build on the card title and make up the bulk of the card.</p>
+    <h5 class="text-indigo-600 font-semibold">Price: 20$</h5>
+  </div>
+</div>
+    </div>
+    <div class="text-center my-5 p-5">
+      <button class="btn btn-lg text-white border-0 bg-blue-500">See More Courses</button>
+     </div>
+  </main>
+  <!-- column end -->
+   <!-- Instite part -->
+    <section class="mb-12 m-3">
+      <div class="grid lg:grid-cols-2 md:grid-cols-2 text-black">
+          <div>
+            <img  class="w-full" src="images/working.png" alt="">
+        
+          </div>
+        <!-- ... -->
+        <div class="bg-teal-50">
+          <div class="lg:p-28 md:p-4 p-4 lg:space-y-3 md:space-y-1 space-y-2">
+            <h3 class="font-bold text-3xl">Explore The elearning Institute</h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure.</p>
+          <p>Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
+          <div class="flex text-black py-4 space-x-7">
+          <div>
+            <h3 class="font-bold text-3xl">3.2K+</h3>
+            <p>Online Courses</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-3xl">600+</h3>
+            <p>Expert member</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-3xl">1K+</h3>
+            <p>Ratings & Review</p>
+          </div>
+          </div>
+          <button class="btn w-32 bg-blue-500 text-white border-0">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- register part -->
+     <section class="mt-5 text-center lg:text-left bg-sky-500 text-white rounded-md m-2">
+    <div class="grid lg:grid-cols-3 md:grid-cols-3 md:gap-0 lg:gap-4 mb-11 md:mb-5">
+    <div class="lg:col-span-2 md:col-span-3 lg:p-16 p-3 md:p-6 space-y-2">
+    <h3 class="text-3xl font-bold">Ready to join?</h3>
+    <p>It is a lonwhig established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+    <div class="lg:col-span-1 md:col-span-3 lg:p-20 md:pb-8 p-3">
+      <button class="btn lg:btn-lg bg-white border-0 text-sky-500">Register Now</button>
+    </div>
+    </div>
+     </section>
+     <!-- Successfull studens part -->
+     <section class="my-10 bg-white lg:text-left md:text-left text-center p-4">
+<div class="text-black p-6">
+  <h2 class="text-3xl font-bold">Meet Our Successfull Students</h2>
+  <p class="mt-4 w-45">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+</div>
+<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-3 lg:gap-4 gap-3 mt-10">
+  <div class="card bg-white w-65 shadow-xl">
+    <figure>
+      <img class="w-full"
+        src="images/student/student-1.png"
+        alt="" />
+    </figure>
+    <div class="card-body text-black text-left">
+      <h2 class="card-title font-bold">Awlad Hossain!</h2>
+      <p>UIUX Designer</p>
+    </div>
+  </div>
+  <div class="card bg-white w-65 shadow-xl">
+    <figure>
+      <img class="w-full"
+        src="images/student/student-2.png"
+        alt="" />
+    </figure>
+    <div class="card-body text-black text-left">
+      <h2 class="card-title font-bold">Awlad Hossain!</h2>
+      <p>UIUX Designer</p>
+    </div>
+  </div>
+  <div class="card bg-white w-65 shadow-xl">
+    <figure>
+      <img class="w-full"
+        src="images/student/student-3.png"
+        alt="" />
+    </figure>
+    <div class="card-body text-black text-left">
+      <h2 class="card-title font-bold">Awlad Hossain!</h2>
+      <p>UIUX Designer</p>
+    </div>
+  </div>
+  <div class="card bg-white w-65 shadow-xl">
+    <figure>
+      <img class="w-full"
+        src="images/student/student-4.png"
+        alt="" />
+    </figure>
+    <div class="card-body text-black text-left">
+      <h2 class="card-title font-bold">Awlad Hossain!</h2>
+      <p>UIUX Designer</p>
+    </div>
+  </div>
+
+</div>
+<div class="text-center my-5 p-5">
+  <button class="btn w-32 text-white border-0 bg-blue-500">View All</button>
+ </div>
+
+     </section>
+     <!-- feedback part -->
+<section class="mb-20 m-3">
+<div class="text-center space-y-3 p-2">
+  <h2 class="text-black font-bold text-4xl">Some Students Feedback</h2>
+  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+</div>
+<div class="grid lg:grid-cols-2 md:grid-cols-1 lg:gap-1 md:gap-1 gap-2 bg-white md:mt-5 mt-5">
+  <div class="card bg-white w-auto md:m-3 shadow-md shadow-slate-600">
+    <div class="flex justify-between lg:p-10 md:p-5 p-5">
+        <img src="images/comma.png" alt="">
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+         
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input
+          type="radio"
+          name="rating-2"
+          class="mask mask-star-2 bg-orange-400"
+          checked="checked" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-200" />
+        </div>
+      </div>
+      <div class="lg:space-y-3 md:space-y-3 space-y-3 p-2">
+       
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.
+        </p>
+        <div class="flex">
+          <img src="images/student/student-5.png" alt="">
+          <div class="pl-10">
+            <h4 class="font-bold text-2xl text-black">Awlad Hossain
+            </h4>
+            <p>UI Designer </p>
+          </div>
+        </div>
+      </div>
+      
+
+  </div>
+  <div class="card bg-white w-70 md:m-3 shadow-md shadow-slate-600">
+    <div class="flex justify-between lg:p-10 md:p-5 p-3">
+        <img src="images/comma.png" alt="">
+        <div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+         
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          <input
+          type="radio"
+          name="rating-2"
+          class="mask mask-star-2 bg-orange-400"
+          checked="checked" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        </div>
+      </div>
+      <div class="lg:space-y-3 md:space-y-3 space-y-3 p-3">
+       
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem.
+        </p>
+        <div class="flex">
+          <img src="images/student/student-6.png" alt="">
+          <div class="pl-10">
+            <h4 class="font-bold text-2xl text-black">Shanta Akter
+            </h4>
+            <p>Graphics Designer </p>
+          </div>
+        </div>
+      </div>
+      
+
+  </div>
+  
+</div>
+
+</section>
+
+<!-- Question parts -->
+ <section class="bg-white mb-14">
+ <div class="lg:space-y-4 lg:text-center md:text-center text-center p-3">
+  <h2 class="text-4xl font-bold text-black">Frequently Asked Questions </h2>
+  <p class="md:pl-16 md:pr-10 p-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+ </div>
+  <div class="lg:pl-36 lg:pr-36 md:pl-14 md:pr-14 p-5">
+    <div class="collapse collapse-arrow">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl bg-slate-50 text-black font-medium">What other services are you compatible with?</div>
+      <div class="collapse-content">
+        <p>There are many variations of passages of available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the generators on the.</p>
+      </div>
+    </div>
+  <div class="collapse collapse-arrow gap-4">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl bg-slate-50 text-black font-medium">I have a technical i need resolved, who do i email?</div>
+    <div class="collapse-content">
+      <p>hello</p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow gap-4">
+    <input type="radio" name="my-accordion-2" />
+    <div class="collapse-title text-xl bg-slate-50 text-black font-medium">What other services are you compatible with?</div>
+    <div class="collapse-content">
+      <p>hello</p>
+    </div>
+  </div>
+  </div>
+
+
+ </section>
+ <!-- last part  -->
+  
+  <section class="lg:visible md:invisible invisible bg-white mb-14">
+    <div class="text-center bg-white">
+      <h3 class="text-4xl font-bold text-black">Trusted by over 800+ companies</h3>
+     <div class="flex justify-center lg:mt-10 md:mt-0 mt-0 lg:gap-10 md:gap-0 gap-0">
+     <img src="images/company/company-1.png" alt="">
+     <img src="images/company/company-2.png" alt="">
+     <img src="images/company/company-3.png" alt="">
+     <img src="images/company/company-4.png" alt="">
+     <img src="images/company/company-5.png" alt="">
+     <img src="images/company/company-6.png" alt="">
+     </div>
+      
+    </div>
+  </section>
+  <!-- footer  -->
+  <footer class="footer footer-center bg-base-200 text-white rounded p-10">
+   <h3 class="text-3xl font-bold">Pro Edu</h3>
+   <p>Office 41, Zawaya Buildin, Ghala Muscat, 
+    Sultanate of Oman</p>
+    <p>Privacy Ploicy  |   Terms of use</p>
+    <div class="grid grid-flow-col gap-4">
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+        </svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+      </a>
+      <i class="fa-brands fa-linkedin-in text-2xl"></i>
+      <i class="fa-brands fa-tiktok text-2xl"></i>
+    
+    </div>
+    
+  </footer>
+ 
+
+
+
+</body>
+</html>
+
