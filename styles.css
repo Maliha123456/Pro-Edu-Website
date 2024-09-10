@@ -1,9 +1,9 @@
 body{
     background-color: white;
-    
 }
 
 .hero img{
     min-height: 60vh;
     object-fit: cover;
-}
+
+} 
